@@ -1,6 +1,5 @@
 import DataTableHead from "./DataTableHead";
 import DataTableBody from "./DataTableBody";
-import React from "react";
 
 const DataTable = ({
   id,

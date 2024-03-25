@@ -1,5 +1,3 @@
-import React from "react";
-
 const DataTableLength = ({ setDataLength, dataLength, setCurrentPage }) => {
   const handleSelect = (e) => {
     const selectedLength = document.querySelector(

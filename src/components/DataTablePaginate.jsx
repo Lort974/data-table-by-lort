@@ -1,5 +1,3 @@
-import React from "react";
-
 const DataTablePaginate = ({ pagesNumber, setCurrentPage, currentPage }) => {
   let pagesButtons = [];
   pagesButtons.push(
