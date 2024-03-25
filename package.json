@@ -1,0 +1,32 @@
+{
+  "name": "data-table-by-lort",
+  "version": "1.0.0",
+  "description": "Create and design interactive data tables",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lort974/data-table-by-lort.git"
+  },
+  "keywords": [
+    "data",
+    "table",
+    "interactive",
+    "react"
+  ],
+  "author": "Lort974",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lort974/data-table-by-lort/issues"
+  },
+  "homepage": "https://github.com/Lort974/data-table-by-lort#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1"
+  }
+}
