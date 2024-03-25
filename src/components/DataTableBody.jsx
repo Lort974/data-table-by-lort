@@ -1,3 +1,5 @@
+import React from "react";
+
 const DataTableBody = ({ data, columns, currentPage, dataLength }) => {
   const startIndex = currentPage * dataLength - dataLength;
   const endIndex = parseInt(startIndex) + parseInt(dataLength);

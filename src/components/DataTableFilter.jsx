@@ -1,3 +1,5 @@
+import React from "react";
+
 const DataTableFilter = ({ setSearchTerm, data }) => {
   const handleFilter = (e) => {
     setSearchTerm(e.target.value);

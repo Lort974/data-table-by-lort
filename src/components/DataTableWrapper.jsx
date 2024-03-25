@@ -4,6 +4,7 @@ import DataTableInfo from "./DataTableInfo";
 import DataTableLength from "./DataTableLength";
 import DataTablePaginate from "./DataTablePaginate";
 import DataTableFilter from "./DataTableFilter";
+import React from "react";
 
 const DataTableWrapper = ({
   data,

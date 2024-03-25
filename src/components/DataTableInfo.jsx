@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import React from "react";
 
 const DataTableInfo = ({ currentPage, dataLength, data, initialEntries }) => {
   const startIndex = currentPage * dataLength - dataLength + 1;
