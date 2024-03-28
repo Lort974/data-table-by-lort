@@ -6,3 +6,4 @@ export { default as DataTableInfo } from "./components/DataTableInfo";
 export { default as DataTableLength } from "./components/DataTableLength";
 export { default as DataTablePaginate } from "./components/DataTablePaginate";
 export { default as DataTableWrapper } from "./components/DataTableWrapper";
+export { default as styles } from "./style/style.css";

@@ -4,6 +4,7 @@ import DataTableInfo from "./DataTableInfo";
 import DataTableLength from "./DataTableLength";
 import DataTablePaginate from "./DataTablePaginate";
 import DataTableFilter from "./DataTableFilter";
+import "../style/style.css";
 
 const DataTableWrapper = ({
   data,
@@ -60,13 +61,13 @@ const DataTableWrapper = ({
   }, [sortCriteria]);
 
   return (
-    <div className={`data-table ${customClassNames}`}>
+    <div className={`data-table ${customClassNames} lort-data-table-wrapper`}>
       <DataTableFilter
         setSearchTerm={setSearchTerm}
         data={data}
         columns={columns}
       />
-      <DataTable //insert here the 3 needed props
+      <DataTable
         setSortDirection={setSortDirection}
         sortDirection={sortDirection}
         setSortCriteria={setSortCriteria}

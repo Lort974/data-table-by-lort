@@ -1,0 +1,227 @@
+.lort-data-table-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "table-filter table-filter" "table-data table-data" "table-length table-info" "table-pagination table-pagination";
+  padding: 32px;
+}
+.lort-data-table-wrapper > :nth-child(1) {
+  position: relative;
+  grid-area: table-filter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  width: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.lort-data-table-wrapper > :nth-child(1) > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+.lort-data-table-wrapper > :nth-child(1) > input:focus-visible {
+  outline: none;
+}
+.lort-data-table-wrapper > :nth-child(1) > span {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #2469ca;
+  cursor: pointer;
+}
+.lort-data-table-wrapper > :nth-child(1) > span > svg {
+  fill: #fff;
+}
+.lort-data-table-wrapper > :nth-child(1):has(input:hover),
+.lort-data-table-wrapper > :nth-child(1):has(input:focus),
+.lort-data-table-wrapper > :nth-child(1):has(span:hover) {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.lort-data-table-wrapper table {
+  grid-area: table-data;
+  width: 100%;
+  font-size: 14px;
+  border-spacing: 0;
+  text-align: left;
+}
+.lort-data-table-wrapper table tr {
+  height: 40px;
+}
+.lort-data-table-wrapper table th,
+.lort-data-table-wrapper table td {
+  max-width: 96px;
+  padding: 4px;
+}
+.lort-data-table-wrapper table thead {
+  color: #fff;
+}
+.lort-data-table-wrapper table thead tr th {
+  cursor: pointer;
+  background-color: #2469ca;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+.lort-data-table-wrapper table thead tr th > span:nth-child(1) {
+  margin-left: 10px;
+  display: inline-block;
+}
+.lort-data-table-wrapper table thead tr th > span:nth-child(2) {
+  position: absolute;
+  bottom: 6px;
+  left: 4px;
+}
+.lort-data-table-wrapper table thead tr th > span:nth-child(3) {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+.lort-data-table-wrapper table thead tr th:first-child {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding-left: 8px;
+}
+.lort-data-table-wrapper table thead tr th:first-child > span:nth-child(1) {
+  margin-left: 6px;
+}
+.lort-data-table-wrapper table thead tr th:last-child {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.lort-data-table-wrapper table thead tr th::after {
+  width: 4px;
+  display: inline-block;
+}
+.lort-data-table-wrapper
+  table
+  thead
+  tr
+  th[data-sort="desc"]
+  > span:nth-child(2) {
+  color: #fff;
+}
+.lort-data-table-wrapper
+  table
+  thead
+  tr
+  th[data-sort="desc"]
+  > span:nth-child(3) {
+  color: #194b92;
+}
+.lort-data-table-wrapper
+  table
+  thead
+  tr
+  th[data-sort="asc"]
+  > span:nth-child(2) {
+  color: #194b92;
+}
+.lort-data-table-wrapper
+  table
+  thead
+  tr
+  th[data-sort="asc"]
+  > span:nth-child(3) {
+  color: #fff;
+}
+.lort-data-table-wrapper
+  table
+  thead
+  tr
+  th[data-sort="none"]
+  > span:nth-child(2) {
+  color: #194b92;
+}
+.lort-data-table-wrapper
+  table
+  thead
+  tr
+  th[data-sort="none"]
+  > span:nth-child(3) {
+  color: #194b92;
+}
+.lort-data-table-wrapper table tbody {
+  color: #2a2a2a;
+}
+.lort-data-table-wrapper table tbody tr.odd {
+  background-color: #fff;
+}
+.lort-data-table-wrapper table tbody tr.even {
+  background-color: #eeeeee;
+}
+.lort-data-table-wrapper > :nth-child(3) {
+  grid-area: table-length;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lort-data-table-wrapper > :nth-child(3) > select {
+  text-align: center;
+  height: 40px;
+  width: 64px;
+  border-radius: 32px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat";
+  background: #eeeeee;
+  transition: all 100ms ease;
+}
+.lort-data-table-wrapper > :nth-child(3) > select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.lort-data-table-wrapper > :nth-child(3) > select:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.lort-data-table-wrapper > :nth-child(4) {
+  grid-area: table-info;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.lort-data-table-wrapper > :nth-child(5) {
+  grid-area: table-pagination;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.lort-data-table-wrapper > :nth-child(5) > button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.lort-data-table-wrapper > :nth-child(5) > button.current {
+  background-color: #2469ca;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid #2469ca;
+}
+.lort-data-table-wrapper > :nth-child(5) > button.other {
+  color: #586f08;
+  background-color: #eeeeee;
+}
+.lort-data-table-wrapper > :nth-child(5) > button.other:hover {
+  background-color: #2469ca;
+}

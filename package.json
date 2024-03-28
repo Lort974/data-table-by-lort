@@ -1,11 +1,13 @@
 {
   "name": "data-table-by-lort",
-  "version": "1.0.5",
+  "version": "1.0.11",
   "description": "Create and design interactive data tables",
   "main": "dist/index.js",
   "scripts": {
     "test": "npm run test",
-    "build": "babel src --out-dir dist"
+    "build:js": "babel src --out-dir dist",
+    "build:css": "copyfiles -u 1 src/**/*.css dist",
+    "build": "npm run build:js && npm run build:css"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,9 @@
   "devDependencies": {
     "@babel/cli": "^7.24.1",
     "@babel/core": "^7.24.3",
+    "@babel/plugin-transform-runtime": "^7.24.3",
     "@babel/preset-env": "^7.24.3",
-    "@babel/preset-react": "^7.24.1"
+    "@babel/preset-react": "^7.24.1",
+    "copyfiles": "^2.4.1"
   }
 }
