@@ -79,7 +79,7 @@ This package comes with neutral css style. Add your own colors, font, layout... 
 ## CONTRIBUTE
 
 As this package has been developed as part of my training, there is no contribution expected.
-However, you can contact me at lort@lort.dev.
+However, you can contact me at ask@lort.dev.
 
 ## LICENCE
 

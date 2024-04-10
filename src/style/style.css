@@ -6,6 +6,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "table-filter table-filter" "table-data table-data" "table-length table-info" "table-pagination table-pagination";
   padding: 32px;
+  background-color: #fff;
+  border-radius: 32px;
 }
 .lort-data-table-wrapper > :nth-child(1) {
   position: relative;
@@ -17,6 +19,7 @@
   width: 50%;
   overflow: hidden;
   margin: auto;
+  border-radius: 32px;
 }
 .lort-data-table-wrapper > :nth-child(1) > input {
   width: 100%;
@@ -41,6 +44,7 @@
   box-sizing: border-box;
   background-color: #2469ca;
   cursor: pointer;
+  border-radius: 50%;
 }
 .lort-data-table-wrapper > :nth-child(1) > span > svg {
   fill: #fff;
