@@ -1,6 +1,6 @@
 {
   "name": "data-table-by-lort",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Create and design interactive data tables",
   "main": "dist/index.js",
   "scripts": {
