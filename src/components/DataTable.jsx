@@ -1,6 +1,8 @@
+// Importation des composants nécessaires
 import DataTableHead from "./DataTableHead";
 import DataTableBody from "./DataTableBody";
 
+// Composant pour un tableau de données
 const DataTable = ({
   id,
   data,
@@ -13,7 +15,7 @@ const DataTable = ({
   dataLength,
   sortCriteria,
 }) => {
-  //Constructor for the titles row - 1 only row
+  // Construction de la ligne des titres - une seule ligne
   const titles = (
     <DataTableHead
       columns={columns}
@@ -26,6 +28,7 @@ const DataTable = ({
     />
   );
 
+  // Construction des lignes de valeurs - autant de lignes que d'éléments dans "data"
   const values = (
     <DataTableBody
       data={data}
@@ -35,11 +38,7 @@ const DataTable = ({
     />
   );
 
-  //Constructor for the items rows - as much rows as items in "data"
-  // const values = currentData.map((item, index) => {
-  //   return <DataTableBody key={index} item={item} columns={columns} />;
-  // });
-
+  // Retour du tableau avec les titres et les valeurs
   return (
     <>
       <table id={id} className={className}>
@@ -50,4 +49,5 @@ const DataTable = ({
   );
 };
 
+// Exportation du composant DataTable
 export default DataTable;
